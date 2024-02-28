@@ -25,7 +25,7 @@ This challenge requires that the developer implementing it follow these constrai
  - User can see the selection effect removed from a name in the summary list when a new name is clicked.
 
 ## Useful links and resources
-- (DOM Events)[https://developer.mozilla.org/en-US/docs/Web/API/Event]
+- [DOM Events](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 - Consider defining your test data in a JavaScript object having a format such as this:
 const people = [
   {name: "...", street: "...", city: "...", state: "...", country: "...", telephone: "...", birthday: "..."},
@@ -36,4 +36,4 @@ const people = [
 ];
 
 ## Example projects
-Checkout the interaction between the Navigation items on the left hand side of the page and the main body of the page on the Javascript (MDN site)[https://developer.mozilla.org/en-US/docs/Web/JavaScript]
+Checkout the interaction between the Navigation items on the left hand side of the page and the main body of the page on the Javascript [MDN site](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
