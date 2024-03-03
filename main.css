@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Constants */
+
+.flex {
+  display: flex;
+}
+
+.header {
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-aside {
+  flex: 1 1 20%;
+  border-right: 10px solid grey;
+}
+
+.details {
+  flex: 1 1 80%;
+}
+
+.left-aside,
+.details {
+  height: 90vh;
+  padding: 0.5rem 0 0 1.5rem;
+}
+
+.person {
+  font-family: sans-serif;
+  font-size: 32px;
+}
+
+#names {
+  color: green;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 1rem 0;
+}
+
+#names p {
+  padding: 1rem 0;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.details h2 {
+  color: purple;
+  font-family: sans-serif;
+}
+
+.details p {
+  padding-bottom: 1rem;
+}

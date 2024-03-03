@@ -1,25 +1,21 @@
 import people from "./people.mjs";
 
 const nameLists = document.getElementById('names');
+const detailsSection = document.getElementById('details');
 
-const listDetails = `${
-  people.map((person, index) => {
-    const names = document.createElement('p');
-    const ul = document.createElement('ul');
-    const li = document.createElement('li');
-
-    names.addEventListener('click', ()=> {
-      ul.classList.toggle('dp-none', 'dp-flex')
+people.map((person) => {
+  const names = document.createElement('p');
+  const {name} = person
+  names.innerText = name
+  names.addEventListener('click', ()=> {
+    detailsSection.innerHTML = ''
+    Object.keys(person).map((key)=>{
+      const h2 = document.createElement('h2');
+      const p = document.createElement('p');
+      h2.innerText = key
+      p.innerText = person[key]
+      detailsSection.append(h2, p)
     })
-    Object.keys(person).map((key) => {
-      const a = document.createElement('a');
-      a.innerText = key
-      a.style.display='block'
-      li.appendChild(a)
-    })
-    ul.appendChild(li)
-    
-    names.innerText = person.name
-    nameLists.append(names, ul)
   })
-}`
+  nameLists.append(names)
+})
